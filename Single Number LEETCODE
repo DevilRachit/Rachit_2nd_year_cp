@@ -1,0 +1,21 @@
+LEETCODE PROBLEM :- Single Number
+
+Approaches:-
+1) Using Nested Loop , TC -> O(N X N)
+2) Using Sorting ,    TC ->      O(nlogN)
+3) Using XOR ,        TC ->    O(N)
+
+
+Code For Optimal Solution
+********************************************************************************************************************
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+      int ans=0;
+      for(int i=0;i<nums.size();i++){
+         ans=ans^nums[i];
+      }
+      return ans;
+    }
+};
+*********************************************************************************************************************
